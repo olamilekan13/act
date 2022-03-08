@@ -9,14 +9,100 @@
         <form method="POST" action="{{ route('register') }}">
             @csrf
 
-            <div>
-                <x-jet-label for="name" value="{{ __('Name') }}" />
-                <x-jet-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" />
+           <div class="mt-4">
+                <x-jet-label for="firstname" value="{{ __('Firstname') }}" />
+                <x-jet-input id="firstname" class="block mt-1 w-full" type="text" name="firstname" :value="old('firstname')" required autofocus autocomplete="firstname" />
             </div>
 
+          <div class="mt-4">
+                <x-jet-label for="middlename" value="{{ __('middlename') }}" />
+                <x-jet-input id="middlename" class="block mt-1 w-full" type="text" name="middlename" :value="old('middlename')" required autofocus autocomplete="middlename" />
+            </div>
+
+
+             <div class="mt-4">
+                <x-jet-label for="lastname" value="{{ __('Lastname') }}" />
+                <x-jet-input id="lastname" class="block mt-1 w-full" type="text" name="lastname" :value="old('lastname')" required autofocus autocomplete="lastname" />
+            </div>
+
+
+
+              <div class="mt-4">
+                <x-jet-label for="phone" value="{{ __('Mobile Number') }}" />
+                <x-jet-input id="phone" class="block mt-1 w-full" type="number" name="phone" :value="old('phone')" required autofocus autocomplete="phone" />
+            </div>
+
+
+
+            
             <div class="mt-4">
                 <x-jet-label for="email" value="{{ __('Email') }}" />
                 <x-jet-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required />
+            </div>
+
+
+          <div class="mt-4">
+                <x-jet-label for="ward" value="{{ __('Gender') }}" />
+                <select id="gender" class="block mt-1 w-full" type="select" name="gender" :value="old('gender')" required>
+                    <option value="M">Male</option>
+                    <option value="F">Female</option>
+                </select>
+            </div>
+
+
+
+
+             <div class="mt-4">
+                <x-jet-label for="state" value="{{ __('State') }}" />
+                <select id="state" class="block mt-1 w-full" type="select" name="state" :value="old('state')" required>
+                    <option value="M">abia</option>
+                    <option value="F">adamawa</option>
+                </select>
+            </div>
+
+
+              <div class="mt-4">
+                <x-jet-label for="lg" value="{{ __('Local-Government') }}" />
+                <select id="lg" class="block mt-1 w-full" type="select" name="lg" :value="old('lg')" required>
+                    <option value="M">Ikeja</option>
+                    <option value="F">agege</option>
+                </select>
+            </div>
+
+              <div class="mt-4">
+                <x-jet-label for="ward" value="{{ __('Ward') }}" />
+                <select id="ward" class="block mt-1 w-full" type="select" name="ward" :value="old('ward')" required>
+                    <option value="M">ijaiye</option>
+                    <option value="F">ikeja</option>
+                </select>
+            </div>
+
+            <div class="mt-4">
+                <x-jet-label for="polling-unit" value="{{ __('Polling-unit') }}" />
+                <select id="polling-unit" class="block mt-1 w-full" type="select" name="polling-unit" :value="old('polling-unit')" required>
+                    <option value="M">Male</option>
+                    <option value="F">Female</option>
+                </select>
+            </div>
+
+              
+
+
+            <div class="mt-4">
+                <x-jet-label for="address" value="{{ __('Address') }}" />
+                <x-jet-input id="address" class="block mt-1 w-full" type="text" name="address" :value="old('address')" required />
+            </div>
+
+
+               <div class="mt-4">
+                <x-jet-label for="validId" value="{{ __('valid Id-Card') }}" />
+                <x-jet-input id="validId" class="block mt-1 w-full" type="file" name="validId" :value="old('validId')" required />
+            </div>
+
+
+            <div class="mt-4">
+                <x-jet-label for="img" value="{{ __('Your Photo') }}" />
+                <x-jet-input id="img" class="block mt-1 w-full" type="file" name="img" :value="old('img')" required />
             </div>
 
             <div class="mt-4">
