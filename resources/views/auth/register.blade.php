@@ -55,8 +55,8 @@
              <div class="mt-4">
                 <x-jet-label for="state" value="{{ __('State') }}" />
                 <select id="state" class="block mt-1 w-full" type="select" name="state" :value="old('state')" required>
-                    <option value="M">abia</option>
-                    <option value="F">adamawa</option>
+                    <option value="abia">abia</option>
+                    <option value="adamawa">adamawa</option>
                 </select>
             </div>
 
@@ -64,24 +64,24 @@
               <div class="mt-4">
                 <x-jet-label for="lg" value="{{ __('Local-Government') }}" />
                 <select id="lg" class="block mt-1 w-full" type="select" name="lg" :value="old('lg')" required>
-                    <option value="M">Ikeja</option>
-                    <option value="F">agege</option>
+                    <option value="ikeja">Ikeja</option>
+                    <option value="agege">agege</option>
                 </select>
             </div>
 
               <div class="mt-4">
                 <x-jet-label for="ward" value="{{ __('Ward') }}" />
                 <select id="ward" class="block mt-1 w-full" type="select" name="ward" :value="old('ward')" required>
-                    <option value="M">ijaiye</option>
-                    <option value="F">ikeja</option>
+                    <option value="ijaiye">ijaiye</option>
+                    <option value="ikeja">ikeja</option>
                 </select>
             </div>
 
             <div class="mt-4">
                 <x-jet-label for="polling-unit" value="{{ __('Polling-unit') }}" />
                 <select id="polling-unit" class="block mt-1 w-full" type="select" name="polling-unit" :value="old('polling-unit')" required>
-                    <option value="M">Male</option>
-                    <option value="F">Female</option>
+                    <option value="agidingbi">agidingbi</option>
+                    <option value="ogba">ogba</option>
                 </select>
             </div>
 
