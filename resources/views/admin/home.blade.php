@@ -1,10 +1,3 @@
-<x-app-layout>
-
-<h1>THIS IS MY ADMIN DASHBOARD</h1>
-
-
-
-</x-app-layout>
 
 
 
@@ -69,7 +62,10 @@
                   <span class="count bg-success"></span>
                 </div>
                 <div class="profile-name">
-                  <h5 class="mb-0 font-weight-normal">Henry Klein</h5>
+                  <!-- <h5 class="mb-0 font-weight-normal">Henry Klein</h5> -->
+                  <x-app-layout>
+              </x-app-layout>
+
                   <span>Gold Member</span>
                 </div>
               </div>
