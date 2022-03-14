@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class wards extends Model
+class LocalGovernment extends Model
 {
     use HasFactory;
 }
