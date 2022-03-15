@@ -91,7 +91,7 @@
 													<i class="material-icons">person</i>
 												</div>
 											</a>
-											<a href="#" class="filterMembers all online contact" data-toggle="list">
+											<!-- <a href="#" class="filterMembers all online contact" data-toggle="list">
 												<img class="avatar-md" src="dist/img/avatars/avatar-male-1.jpg" data-toggle="tooltip" data-placement="top" title="Michael" alt="avatar">
 												<div class="status">
 													<i class="material-icons online">fiber_manual_record</i>
@@ -103,8 +103,8 @@
 												<div class="person-add">
 													<i class="material-icons">person</i>
 												</div>
-											</a>
-											<a href="#" class="filterMembers all online contact" data-toggle="list">
+											</a> -->
+											<!-- <a href="#" class="filterMembers all online contact" data-toggle="list">
 												<img class="avatar-md" src="dist/img/avatars/avatar-female-2.jpg" data-toggle="tooltip" data-placement="top" title="Lean" alt="avatar">
 												<div class="status">
 													<i class="material-icons online">fiber_manual_record</i>
@@ -116,8 +116,8 @@
 												<div class="person-add">
 													<i class="material-icons">person</i>
 												</div>
-											</a>
-											<a href="#" class="filterMembers all online contact" data-toggle="list">
+											</a> -->
+											<!-- <a href="#" class="filterMembers all online contact" data-toggle="list">
 												<img class="avatar-md" src="dist/img/avatars/avatar-male-2.jpg" data-toggle="tooltip" data-placement="top" title="Mariette" alt="avatar">
 												<div class="status">
 													<i class="material-icons online">fiber_manual_record</i>
@@ -129,8 +129,8 @@
 												<div class="person-add">
 													<i class="material-icons">person</i>
 												</div>
-											</a>
-											<a href="#" class="filterMembers all online contact" data-toggle="list">
+											</a> -->
+											<!-- <a href="#" class="filterMembers all online contact" data-toggle="list">
 												<img class="avatar-md" src="dist/img/avatars/avatar-female-3.jpg" data-toggle="tooltip" data-placement="top" title="Harmony" alt="avatar">
 												<div class="status">
 													<i class="material-icons online">fiber_manual_record</i>
@@ -141,8 +141,8 @@
 												</div>
 												<div class="person-add">
 													<i class="material-icons">person</i>
-												</div>
-											</a>
+												</div> -->
+											<!-- </a>
 											<a href="#" class="filterMembers all offline contact" data-toggle="list">
 												<img class="avatar-md" src="dist/img/avatars/avatar-female-5.jpg" data-toggle="tooltip" data-placement="top" title="Keith" alt="avatar">
 												<div class="status">
@@ -194,7 +194,7 @@
 												<div class="person-add">
 													<i class="material-icons">person</i>
 												</div>
-											</a>
+											</a> -->
 										</div>
 									</div>
 								</div>
@@ -230,7 +230,7 @@
 													<p>A new feature has been updated to your account. Check it out...</p>
 												</div>
 											</a>									
-											<a href="#list-empty" class="filterDiscussions all unread single" id="list-empty-list" data-toggle="list" role="tab">
+											<!-- <a href="#list-empty" class="filterDiscussions all unread single" id="list-empty-list" data-toggle="list" role="tab">
 												<img class="avatar-md" src="dist/img/avatars/avatar-male-1.jpg" data-toggle="tooltip" data-placement="top" title="Michael" alt="avatar">
 												<div class="status">
 													<i class="material-icons offline">fiber_manual_record</i>
@@ -243,8 +243,8 @@
 													<span>Sun</span>
 													<p>How can i improve my chances of getting a deposit?</p>
 												</div>
-											</a>									
-											<a href="#list-chat" class="filterDiscussions all read single" id="list-chat-list2" data-toggle="list" role="tab">
+											</a>									 -->
+											<!-- <a href="#list-chat" class="filterDiscussions all read single" id="list-chat-list2" data-toggle="list" role="tab">
 												<img class="avatar-md" src="dist/img/avatars/avatar-female-2.jpg" data-toggle="tooltip" data-placement="top" title="Lean" alt="avatar">
 												<div class="status">
 													<i class="material-icons offline">fiber_manual_record</i>
@@ -326,7 +326,7 @@
 													<span>Thu</span>
 													<p>Unfortunately your session today has been cancelled!</p>
 												</div>
-											</a>
+											</a> -->
 										</div>
 									</div>
 								</div>
@@ -353,11 +353,11 @@
 													<i class="material-icons online">fiber_manual_record</i>
 												</div>
 												<div class="data">
-													<p>Janette has accepted your friend request on Swipe.</p>
-													<span>Oct 17, 2018</span>
+													<p>You are now a verified member of the ACT Movement.</p>
+													<span>March 1, 2022</span>
 												</div>
 											</a>
-											<a href="#" class="filterNotifications all latest notification" data-toggle="list">
+											<!-- <a href="#" class="filterNotifications all latest notification" data-toggle="list">
 												<img class="avatar-md" src="dist/img/avatars/avatar-male-1.jpg" data-toggle="tooltip" data-placement="top" title="Michael" alt="avatar">
 												<div class="status">
 													<i class="material-icons online">fiber_manual_record</i>
@@ -436,7 +436,7 @@
 													<p>Mildred has a birthday today. Wish him all the best.</p>
 													<span>Jul 19, 2017</span>
 												</div>
-											</a>
+											</a> -->
 										</div>
 									</div>
 								</div>
@@ -810,7 +810,7 @@
 											<!-- End of Privacy & Safety -->
 											<!-- Start of Logout -->
 											<div class="category">
-												<a href="sign-in.html" class="title collapsed">
+												<a href="{{ route('login') }}" class="title collapsed">
 													<i class="material-icons md-30 online">power_settings_new</i>
 													<div class="data">
 														<h5>Power Off</h5>

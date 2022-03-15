@@ -10,12 +10,7 @@
  <body>
      <h1>this the home page</h1>
      
-<a href="{{ route('login') }}"><button>LOGIN</button></a>
 
-
-<a href="{{ route('register') }}"><button>REGISTER</button></a>
-
-     
                
                 
  </body>
@@ -83,7 +78,7 @@
 						<div class="hero-copy">
 	                        <h1 class="hero-title mt-0">ALREADY AN ACT MOVEMENT MEMBER?</h1>
 	                        <!-- <p class="hero-paragraph">Our landing page template works on all devices, so you only have to set it up once, and get beautiful results forever.</p> -->
-	                        <div class="hero-cta"><a class="button button-shadow" href="{{ route('login') }}">Login</a><a class="button button-primary button-shadow" href="{{ route('register') }}">Signup</a></div>
+	                        <div class="hero-cta"><a class="button button-shadow" href="{{ route('login') }}">Login</a><a class="button button-primary button-shadow" href="{{ url('/register') }}">Signup</a></div>
 						</div>
 						<div class="hero-app">
 							<div class="hero-app-illustration">

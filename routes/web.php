@@ -22,9 +22,9 @@ use App\Http\Controllers\MainController;
 // });
 // Route::get('/user',[\App\Http\Controllers\UserController::class,'user']);
 
-Route::get('/register','App\Http\Controllers\MainController@State' );
+Route::get('auth/register','App\Http\Controllers\MainController@State')->name('auth/register');
 // Route::get('/welcome','App\Http\Controllers\HomeController@redirect,');
-Route::get('/getLocalGovernments/{id}','App\Http\Controllers\MainController@getStates');
+Route::get('/getLocalGovernments/{id}','App\Http\Controllers\MainController@getLocalGovernments');
 Route::get('/getWards/{id}','App\Http\Controllers\MainController@getWards');
 Route::get('/getPollingUnits/{id}','App\Http\Controllers\MainController@getPollingUnits');
 
