@@ -1,10 +1,10 @@
 <?php
-
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 //include homecontroller in web.php
 use App\Http\Controllers\HomeController;
-
 use App\Http\Controllers\MainController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -16,19 +16,14 @@ use App\Http\Controllers\MainController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-// Route::get('/user',[\App\Http\Controllers\UserController::class,'user']);
-
-Route::get('auth/register','App\Http\Controllers\MainController@State')->name('auth/register');
-// Route::get('/welcome','App\Http\Controllers\HomeController@redirect,');
-Route::get('/getLocalGovernments/{id}','App\Http\Controllers\MainController@getLocalGovernments');
+//route for my state,lg function
+Route::get('auth.register','App\Http\Controllers\MainController@getStates');
+Route::get('/getLocalgovernments/{id}','App\Http\Controllers\MainController@getLocalgovernments');
 Route::get('/getWards/{id}','App\Http\Controllers\MainController@getWards');
-Route::get('/getPollingUnits/{id}','App\Http\Controllers\MainController@getPollingUnits');
+Route::get('/getPollingunits/{id}','App\Http\Controllers\MainController@getPollingunits');
 
 // setting route for home page
+Route::get('/register' ,[MainController::class, 'State']);
 
 Route::get('/' ,[HomeController::class, 'index']);
 

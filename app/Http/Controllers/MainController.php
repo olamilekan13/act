@@ -4,10 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use Illuminate\Support\Facades\Auth;
 
-use App\Models\User;
 
+use App\Http\Controllers\HomeController;
 
 use App\Models\State;
 use App\Models\LocalGovernment;
@@ -23,30 +22,32 @@ class MainController extends Controller
      */
    public function State(){
     	$states = State::all()->pluck('state_name','id');
+			// dd($states);
     	return view('auth/register',compact('states'));
     }
 
-     public function getLocalGovernments($id){
-    	$localgovernments= LocalGovernment::where('state_id',$id)->pluck('LocalGovernment_name','id');
-        return json_encode($localgovernments);
+
+
+    public function getLocalgovernments($id){
+        //  dd($localgovernment);
+    	$localgovernment= LocalGovernment::where('state_id',$id)->pluck('LocalGovernment_name','id');
+        return json_encode($localgovernment);
     }
 
 
-    
     public function getWards($id){
-    	$wards= Ward::where('LocalGovernment_id',$id)->pluck('ward_name','id');
-        return json_encode($wards);
+         dd($wards);
+    	$ward= Ward::where('LocalGovernment_id',$id)->pluck('ward_name','id');
+        return json_encode($ward);
     }
 
 
 
-    
-    public function getPollingUnits($id){
+
+    public function getPollingunits($id){
     	$pollingunits= PollingUnit::where('ward_id',$id)->pluck('PollingUnits_name','id');
         return json_encode($pollingunits);
     }
-
-
 
 
     /**

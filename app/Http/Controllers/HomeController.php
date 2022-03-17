@@ -2,11 +2,22 @@
 
 namespace App\Http\Controllers;
 
+
+
+
+use App\Http\Controllers\MainController;
+
 use Illuminate\Http\Request;
 
 use Illuminate\Support\Facades\Auth;
 
 use App\Models\User;
+use App\Models\State;
+use App\Models\LocalGovernment;
+use App\Models\Ward;
+use App\Models\PollingUnit;
+
+
 
 class HomeController extends Controller
 {
@@ -39,6 +50,30 @@ class HomeController extends Controller
     {
         return view('welcome');
     }
+
+
+
+    // functions  for state.lg...
+
+
+
+      
+
+    
+
+
+    
+
+
+
+    
+
+    
+
+
+
+
+
 
 
 

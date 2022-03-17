@@ -65,9 +65,10 @@
                 <label for="state">Select your State</label>
                 <select name="state" id="state" class="form-control">
                     <option value="">Select State</option>
-                    @foreach($states as $key => $value)
+                    @foreach( $states as $key => $value)
                     <option value="{{$key}}">{{$value}}</option>
                     @endforeach
+
                      </select>    
             </div>
               <div class="form-group">
@@ -94,9 +95,9 @@
            $(document).ready(function(){
             $('select[name="state"]').on('change',function(){
                 var state_id= $(this).val();
-                if (state_id ) {
+                if (state_id ) {    
                  $.ajax({
-                    url: "{{url('/getLocalGovernments/')}}/"+state_id,
+                    url: "{{url('/getLocalgovernments/')}}/"+state_id,
                   type: "GET",
                   dataType: "json",
                   success: function(data){
@@ -111,9 +112,12 @@
                      $('select[name="LocalGovernment"]').empty();
                }
            });
-             $('select[name="LocalGovernment"]').on('change',function(){
+
+
+           $(document).ready(function(){
+            $('select[name="LocalGovernment"]').on('change',function(){
                 var LocalGovernment_id= $(this).val();
-                if (LocalGovernment_id) {
+                if (LocalGovernment_id ) {    
                  $.ajax({
                     url: "{{url('/getWards/')}}/"+LocalGovernment_id,
                   type: "GET",
@@ -130,7 +134,54 @@
                      $('select[name="Ward"]').empty();
                }
            });
+
+             });
+
+
+
+
+        //      $('select[name="LocalGovernment"]').on('change',function(){
+        //         var LocalGovernment_id= $(this).val();
+        //         if (LocalGovernment_id) {
+        //          $.ajax({
+        //             url: "{{url('/getWards/')}}/"+LocalGovernment_id,
+        //           type: "GET",
+        //           dataType: "json",
+        //           success: function(data){
+        //             console.log(data);
+        //             $('select[name="Ward"]').empty();
+        //             $.each(data,function(key,value){
+        //                 $('select[name="Ward"]').append('<option value="'+key+'">'+value+'</option>');
+        //             });
+        //           }
+        //          });
+        //         }else {
+        //              $('select[name="Ward"]').empty();
+        //        }
+        //    });
+
+           $('select[name="PollingUnits"]').on('change',function(){
+                var PollingUnits_id= $(this).val();
+                if (PollingUnits_id) {
+                 $.ajax({
+                    url: "{{url('/getPollingunits/')}}/"+PollingUnits_id,
+                  type: "GET",
+                  dataType: "json",
+                  success: function(data){
+                    console.log(data);
+                    $('select[name="Ward"]').empty();
+                    $.each(data,function(key,value){
+                        $('select[name="Ward"]').append('<option value="'+key+'">'+value+'</option>');
+                    });
+                  }
+                 });
+                }else {
+                     $('select[name="Ward"]').empty();
+               }
+           });
            });
        </script>
+
+       
     </body>
 </html>
