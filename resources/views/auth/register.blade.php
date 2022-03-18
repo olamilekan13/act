@@ -242,7 +242,7 @@
                   dataType: "json",
                   success: function(data){
                     console.log(data);
-                    $('select[name="lg"]').empty();
+                    // $('select[name="lg"]').empty();
                     $.each(data,function(key,value){
                         $('select[name="lg"]').append('<option value="'+key+'">'+value+'</option>');
                     });
@@ -264,7 +264,7 @@
                   dataType: "json",
                   success: function(data){
                     console.log(data);
-                    $('select[name="ward"]').empty();
+                    // $('select[name="ward"]').empty();
                     $.each(data,function(key,value){
                         $('select[name="ward"]').append('<option value="'+key+'">'+value+'</option>');
                     });
@@ -309,7 +309,7 @@
                   dataType: "json",
                   success: function(data){
                     console.log(data);
-                    $('select[name="polling-unit"]').empty();
+                    // $('select[name="polling-unit"]').empty();
                     $.each(data,function(key,value){
                         $('select[name="polling-unit"]').append('<option value="'+key+'">'+value+'</option>');
                     });
