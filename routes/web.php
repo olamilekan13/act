@@ -19,7 +19,7 @@ use App\Http\Controllers\MainController;
 //route for my state,lg function
 Route::get('auth.register','App\Http\Controllers\MainController@getStates');
 Route::get('/getLocalgovernments/{id}','App\Http\Controllers\MainController@getLocalgovernments');
-Route::get('/getWards/{id}','App\Http\Controllers\MainController@getWards');
+Route::get('/getWard/{id}','App\Http\Controllers\MainController@getWard');
 Route::get('/getPollingunits/{id}','App\Http\Controllers\MainController@getPollingunits');
 
 // setting route for home page

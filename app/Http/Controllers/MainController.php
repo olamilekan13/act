@@ -35,8 +35,8 @@ class MainController extends Controller
     }
 
 
-    public function getWards($id){
-         dd($wards);
+    public function getWard($id){
+        
     	$ward= Ward::where('LocalGovernment_id',$id)->pluck('ward_name','id');
         return json_encode($ward);
     }
