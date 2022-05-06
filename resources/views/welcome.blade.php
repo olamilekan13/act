@@ -76,9 +76,9 @@
                 <div class="container">
                     <div class="hero-inner">
 						<div class="hero-copy">
-	                        <h1 class="hero-title mt-0">ALREADY AN ACT MOVEMENT MEMBER?</h1>
+	                        <h1 class="hero-title mt-0">WELCOME TO ACT MOVEMENT </h1>
 	                        <!-- <p class="hero-paragraph">Our landing page template works on all devices, so you only have to set it up once, and get beautiful results forever.</p> -->
-	                        <div class="hero-cta"><a class="button button-shadow" href="{{ route('login') }}">Login</a><a class="button button-primary button-shadow" href="{{ url('/register') }}">Signup</a></div>
+	                        <div class="hero-cta"><a class="button button-primary button-shadow" href="{{ url('/register') }}">Signup</a></div>
 						</div>
 						<div class="hero-app">
 							<div class="hero-app-illustration">

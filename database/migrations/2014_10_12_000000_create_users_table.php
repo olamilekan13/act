@@ -15,16 +15,14 @@ return new class extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->id();
-            $table->string('firstname');
-            $table->string('middlename');
-            $table->string('lastname');
+            $table->string('fullname');
             $table->string('address')->nullable();
             $table->string('phone')->nullable();
             $table->string('gender');
             $table->string('state');
             $table->string('lg');
             $table->string('ward');
-            $table->string('polling-unit');
+            $table->string('polling_units');
             $table->boolean('usertype')->default(0);
             $table->string('validId');
             $table->string('img');

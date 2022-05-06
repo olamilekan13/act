@@ -53,7 +53,7 @@ class HomeController extends Controller
 
 
 
-    // functions  for state.lg...
+    // function
 
 
 
